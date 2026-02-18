@@ -1,0 +1,133 @@
+/* General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url(../img/2.png); 
+    background-size: cover;
+    background-position: center;
+    padding: 80px 10%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 500px;
+    z-index: 2;
+}
+
+.badge {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 20px 0;
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Círculo Verde */
+.discount-circle {
+    position: absolute;
+    right: 15%;
+    top: 50px;
+    background-color: #00BF63;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 800;
+}
+
+.discount-circle .pct { font-size: 40px; }
+.discount-circle .off { font-size: 25px; }
+
+/* Grid de Productos */
+.product-grid {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding: 60px 5%;
+    gap: 30px;
+}
+
+.product-card {
+    text-align: center;
+    width: 250px;
+    width: calc(33.33% - 20px); 
+    min-width: 250px;
+}
+
+.product-card img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #ff4d4d;
+    margin-right: 10px;
+}
+
+/* Footer y Botón */
+.footer {
+    background-color: #000;
+    padding: 40px;
+    display: flex;
+    justify-content: left;
+}
+
+.btn-shop {
+    background-color: #00BF63;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero { text-align: center; justify-content: center; }
+    .hero h1 { font-size: 32px; }
+    .discount-circle { 
+        position: relative; 
+        right: auto; 
+        margin: 20px auto; 
+    }
+    .product-grid { flex-direction: column; align-items: center; }
+}
