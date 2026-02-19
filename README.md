@@ -14,4 +14,25 @@
 
 <img width="1780" height="2150" alt="image" src="https://github.com/user-attachments/assets/aad53124-8ba8-4e20-a6d1-1428a269b92d" />
 
+
+Tecnología
+[ ] HTML
+
+[ ] CSS3
+
+[ ] docs
+
+Seleccione el tipo de actividad
+[ ] Feature
+
+[ ] Changes
+
+[ ] Hotfix
+
+[ ] Refactor
+
+[ ] Performance
+
+[ ] Testing
+
    
